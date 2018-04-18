@@ -1,0 +1,203 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*header*/
+.bloc-header{
+	background: #d73351;
+	display:flex;
+	justify-content: space-around;
+	color: white;
+}
+
+#menu
+{
+	font-size:18px;
+	font-weight:normal;
+	letter-spacing:6px;
+	background: #d73351;
+}
+ 
+#menu > ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+	display: flex;
+}
+ 
+#menu ul li
+{
+	cursor:pointer;
+	padding:5px 8px;
+	list-style: none;
+	margin-top: 15px;
+}
+ 
+#menu ul li:hover
+{
+	background-color:#FC0505;
+	color:white;
+}
+ 
+#hamburger
+{
+	display:none;
+	width: 50px;
+	height:50px;
+	text-align:center;
+}
+ #hamburger-img{
+	margin-top: 20px;
+ }
+ 
+ .titre1{
+	margin-bottom: 20px;
+ }
+ /*media queries header*/
+ 
+@media screen and (max-width: 750px)
+{
+ 
+#menu
+{
+	display:none;
+	position: absolute;
+	top: 63px;
+}
+
+#hamburger
+{
+  display:block;
+}
+ .bloc-header{
+	background: #d73351;
+	display:flex;
+	justify-content: space-around;
+	color: white;
+ }
+ ul{
+	flex-direction: column;
+ }
+ .li{
+	padding-left: 15px;
+	width: 100%;
+ }
+}
+
+/*section-1*/
+
+.presentation-desktop{
+	display: none;
+}
+.section-1bis{
+	background: url(img/faux-slider.jpg);
+	display: flex;
+	width: auto;
+}
+
+.presentation{
+	color: white;
+	width: 100%;
+}
+
+.presentation > h3{
+	font-size: 50px;
+	margin: auto;
+	padding: 20px;
+
+}
+
+.presentation > p{
+	font-size: 18px;
+	margin: auto;
+	padding: 20px;
+}
+
+.section-1bis > img{
+	margin: 80px;
+	
+}
+
+.bla{
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+/*media queries section 1*/
+
+@media screen and (min-width: 750px){
+	.presentation {
+		display: none;
+		
+	}
+	
+	.section-1bis{
+		flex-direction: row-reverse;
+	}
+	
+	.casse-bonbon{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	.presentation-desktop{
+		display: block;
+		color: white;
+		font-size: 18px;
+		margin: 100px;
+		width: 800px;
+		margin: auto;
+	}
+	.presentation-desktop > h3, p{
+		display: inline;
+		padding: 20px;
+	}	
+}
+
+/*section produits*/
+.choix{
+	height: 400px;
+	display: block;
+}
+.catalogue{
+	display: flex;
+	justify-content: space-around;
+	
+}
+.choix > h2{
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 45px;
+	margin-top: 50px;
+}
+ 
+	.ptxt{
+		margin-left: 80px;
+		color: green;
+		font-size: 25px;
+	}
+	
+	.btxt{
+		margin-left: 80px;
+		color: #D3D317;
+		font-size: 25px;
+	}
+	
+	.ftxt{
+		margin-left: 80px;
+		color: red;
+		font-size: 25px;
+	}
+/*media queries prduits*/
+	
+@media screen and (max-width: 750px){
+	.choix{
+		display: none;
+	}
+}
