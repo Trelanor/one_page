@@ -322,7 +322,7 @@ label span,legend span {
 }
 
 textarea {
-		width: 750px;
+		width: 700px;
 		height: 100px;
 }
 
@@ -336,7 +336,7 @@ textarea {
 }
 
 .button{
-		background: #F5A2A2;
+		background: #D73351;
 		color: #FFFFFF;
 		border: 0;
 		padding: 10px 20px;
@@ -346,8 +346,12 @@ textarea {
 		font-size: 16px;
 		text-transform: uppercase;
 		display: inline-block;
-		width: 750px;
+		width: 700px;
 		height: 50px;
+}
+
+.button:hover {
+background: #CE2323;
 }
 
 .formcontainer{
@@ -358,9 +362,9 @@ textarea {
 }
 
 .name-mail{
-		width: 700px;
+
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 }
 
 h1 {
