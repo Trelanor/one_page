@@ -10,6 +10,14 @@ var menuElement = document.getElementById("menu");
       menuElement.style.display = "block";
     
   })
-  
+
+  window.addEventListener('resize', function() {
+    if (window.matchMedia("(min-width: 750px)").matches){
+      menuElement.style.display = "block";
+    }
+    else{
+      menuElement.style.display = "none";
+    }
+  })
 
 
