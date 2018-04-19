@@ -37,12 +37,12 @@ body{
 	cursor:pointer;
 	padding:5px 8px;
 	list-style: none;
-	padding-top: 15px;
+	padding: 20px;
 }
  
 #menu ul li:hover
 {
-	background-color:#FC0505;
+	background-color:#CE2323;
 	color:white;
 }
  
@@ -57,14 +57,14 @@ body{
 	margin-top: 20px;
 	cursor: pointer;
  }
- 
  .titre1{
-		margin-top: 15px;
- }
+		display: none;
+	}
+ 
  /*media queries header*/
  
 @media screen and (max-width: 750px){
- 
+	
 #menu
 {
 	display: none;
@@ -90,6 +90,10 @@ body{
 	padding-left: 15px;
 	width: 100%;
  }
+	.titre1{
+		display: block;
+		margin-top: 15px;
+	}
 }
 
 /*section-1*/
@@ -165,7 +169,11 @@ body{
 	}
 	.presentation-desktop > h3, p{
 		display: inline;	
-	}	
+	}
+	.presentation-desktop h2{
+		font-size: 60px;
+		margin-bottom: 15px;
+	}
 }
 
 /*section produits*/
@@ -198,7 +206,7 @@ body{
 	}
 	
 	.ftxt{
-		margin-left: 80px;
+		margin-left: 60px;
 		color: red;
 		font-size: 25px;
 	}
