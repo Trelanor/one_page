@@ -18,6 +18,7 @@ body{
 
 #menu
 {
+	display: block;
 	font-size:18px;
 	font-weight:normal;
 	background: #d73351;
@@ -36,6 +37,7 @@ body{
 	cursor:pointer;
 	padding:5px 8px;
 	list-style: none;
+	padding-top: 15px;
 }
  
 #menu ul li:hover
@@ -168,7 +170,7 @@ body{
 
 /*section produits*/
 .choix{
-	height: 400px;
+	height: 300px;
 	display: block;
 }
 .catalogue{
@@ -265,6 +267,106 @@ padding-top: 60px;
 
 /*-------------------------------------------------------*/
 
+input[type="text"],input[type="password"],input[type="email"],input[type="search"],input[type="url"],input[type="tel"],input[type="number"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="range"],input[type="color"],select,textarea {
+		display:block;
+		width:300px;
+		height:40px;
+		padding:0 9px;
+		line-height:22px;
+		border:1px solid #DFDFDF;
+		-moz-border-radius:2px;
+		border-radius:2px;
+		color:#5f6a7d;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		font:13px;
+		font-family:"Roboto", sans-serif;
+		margin-bottom:15px
+}
+
+input[type=number] {
+		-moz-appearance:textfield
+		padding-left: 20px;
+}
+
+select {
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		border-radius:3px;
+		border:1px solid #D9DBDC;
+		padding:10px 9px 8px;
+		-moz-appearance:none;
+		text-indent:0.01px;
+}
+
+label,legend,.option_title {
+		display:block;
+		font-size:13px;
+		text-transform:uppercase
+}
+
+}
+label span,legend span {
+		font-weight:bold;
+		font-size:13px;
+		color:#444
+}
+
+textarea {
+		width: 750px;
+		height: 100px;
+}
+
+#contactFormEmail {
+		width:300px;
+		display:inline-block;
+}
+
+.red {
+		color:#cc3333;
+}
+
+.button{
+		background: #F5A2A2;
+		color: #FFFFFF;
+		border: 0;
+		padding: 10px 20px;
+		text-align: center;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 16px;
+		text-transform: uppercase;
+		display: inline-block;
+		width: 750px;
+		height: 50px;
+}
+
+.formcontainer{
+		width: 700px;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+}
+
+.name-mail{
+		width: 700px;
+		display: flex;
+		justify-content: space-around;
+}
+
+h1 {
+		text-align:center;
+		font-weight:normal;
+		font-size: 40px;
+}
+
+.formcontainer > p{
+		text-align: center;
+		
+}
+
+/*-------------------------------------------------------*/
 
 .footer {
 background-color: #D73351;
@@ -310,6 +412,10 @@ display: none;
 		.copyright{
 			display: block;
 			padding: 10px;
+		}
+		
+		.formcontainer{
+			display: none
 		}
 }
 

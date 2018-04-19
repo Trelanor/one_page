@@ -101,27 +101,53 @@
 					<p> Légères et faciles à transporter, c'est le repas nomade idéal.  </p>
 				</div>
 			</div>
+		</section>
+		
+		<section class="formcontainer">
+			<h1>Ecrivez-nous</h1>
 
+			<form method="post" action="#" id="contact_form" accept-charset="UTF-8" class="contact-form">
+				<input type="hidden" name="form_type" value="contact" />
+				<input type="hidden" name="utf8" /> 
+				<br class="clear" />
+
+				<section class="name-mail">
+					<div> 
+						<label for="contactFormName">Name <span class="red">*</span></label>
+						<input type="text" id="contactFormName" name="contact[contact-form-name]" placeholder="Name" autocapitalize="words" value="" required="required">
+					</div>
+	
+					<div>
+						<label for="contactFormEmail">Email <span class="red">*</span></label>
+						<input type="email" id="contactFormEmail" name="contact[email]" placeholder="Email" autocorrect="off" autocapitalize="off" value="" required="required">
+					</div>
+				</section>
+
+				<label for="contactFormMessage"> Message <span class="red">*</span></label>
+				<textarea id="contactFormMessage" name="contact[body]" placeholder="Message" required="required"> </textarea>
+
+				<input type="submit" value="Send" class="button" />
+			</form>
 		</section>
 			
-			<footer class="footer">
-				<div class="contact">
-					<img src="img/mail-logo.jpg"/>
-					<p> Contactez nous </p> 
-				</div>
-				   
-				<div class="logo">
-					<img src="img/instagram-logo.jpg">
-					<img src="img/fb-logo.jpg">
-					<img src="img/twitter-logo.jpg">
-				</div>		
-			</footer>
-		
-			<section class="copyright">
-				<p>Copyright (c) 2018 Stacy-Jonathan Corporation.</p>
-			</section>
+		<footer class="footer">
+			<div class="contact">
+				<img src="img/mail-logo.jpg"/>
+				<p> Contactez nous </p> 
+			</div>
+			   
+			<div class="logo">
+				<img src="img/instagram-logo.jpg">
+				<img src="img/fb-logo.jpg">
+				<img src="img/twitter-logo.jpg">
+			</div>		
+		</footer>
+	
+		<section class="copyright">
+			<p>Copyright (c) 2018 Stacy-Jonathan Corporation.</p>
+		</section>
 
-			<script src="script.js"></script>	
+		<script src="script.js"></script>	
 		</body>
 	</html>
 	
