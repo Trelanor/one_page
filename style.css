@@ -1,8 +1,8 @@
-
 *{
 	margin: 0;
 	padding: 0;
 }
+
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -11,15 +11,15 @@ body{
 .bloc-header{
 	background: #d73351;
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	color: white;
+
 }
 
 #menu
 {
 	font-size:18px;
 	font-weight:normal;
-	letter-spacing:6px;
 	background: #d73351;
 }
  
@@ -27,7 +27,7 @@ body{
 {
 	margin:0;
 	padding:0;
-	list-style:none;
+	list-style: none;
 	display: flex;
 }
  
@@ -36,7 +36,6 @@ body{
 	cursor:pointer;
 	padding:5px 8px;
 	list-style: none;
-	margin-top: 15px;
 }
  
 #menu ul li:hover
@@ -54,6 +53,7 @@ body{
 }
  #hamburger-img{
 	margin-top: 20px;
+	cursor: pointer;
  }
  
  .titre1{
@@ -65,9 +65,10 @@ body{
  
 #menu
 {
-	display:none;
+	display: none;
 	position: absolute;
-	top: 63px;
+	top: 60px;
+	width: 100%;
 }
 
 #hamburger
@@ -96,8 +97,9 @@ body{
 }
 .section-1bis{
 	background: url(img/faux-slider.jpg);
+	background-size: cover;
+	height: 100%;
 	display: flex;
-	width: auto;
 }
 
 .presentation{
@@ -119,15 +121,15 @@ body{
 }
 
 .section-1bis > img{
-	margin: 80px;
-	
+	margin: auto;
+	padding: 50px;
 }
 
 .bla{
 	background: black;
 	color: white;
 	text-align: center;
-	font-size: 18px;
+	font-size: 18px;s
 }
 
 
@@ -141,6 +143,9 @@ body{
 	
 	.section-1bis{
 		flex-direction: row-reverse;
+		background: url(img/faux-slider.jpg);
+		background-size: cover;
+		height: 100%;
 	}
 	
 	.casse-bonbon{
@@ -157,8 +162,7 @@ body{
 		margin: auto;
 	}
 	.presentation-desktop > h3, p{
-		display: inline;
-		padding: 20px;
+		display: inline;	
 	}	
 }
 
@@ -205,31 +209,36 @@ body{
 }
 
 @media screen and (max-width: 750px){
-#reverse {
-text-align: right;
-}
-}
+		#reverse {
+		text-align: right;
+		}
+		}
+		
+		@media screen and (min-width: 750px){
+		
+		.container{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		}
+		
+		.element{
+		flex-direction: column;
+		text-align: center;
+		width: 250px;
+		justify-content: space-around;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		}
 
-@media screen and (min-width: 750px){
+		#reverse{
+		flex-direction:column-reverse;
+		}
 
-.container{
-display: flex;
-justify-content: space-around;
-width: 100%;
-}
+		.contact  p{
+			padding-bottom: 20px;
+		}
 
-.element{
-flex-direction: column;
-text-align: center;
-width: 250px;
-justify-content: space-around;
-margin-bottom: 50px;
-margin-top: 50px;
-}
-
-#reverse{
-flex-direction:column-reverse;
-}
 }
 
 .container {
@@ -276,6 +285,7 @@ padding-top: 35%;
 padding-left: 8%;
 }
 
+
 footer > div > p{
 color: white;
 font-weight: bold;
@@ -292,8 +302,14 @@ padding-right: 8%;
 
 .copyright {
 text-align : center;
-font-size: 10px;
+font-size: 12px;
+display: none;
 }
 
-
+@media screen and (max-width: 750px){
+		.copyright{
+			display: block;
+			padding: 10px;
+		}
+}
 

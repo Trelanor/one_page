@@ -1,8 +1,16 @@
-function hamburger_click()
-{
-  var hamburgerElement = document.getElementById("hamburger");
-  var menuElement = document.getElementById("menu");
+
+var hamburgerElement = document.getElementById("hamburger-img");
+var menuElement = document.getElementById("menu");
  
-  hamburgerElement.style.display = "none";
-  menuElement.style.display = "block";
-}
+hamburgerElement.addEventListener('click', function() {
+  
+  if(menuElement.style.display == "block")
+    menuElement.style.display = "none";
+  else
+    menuElement.style.display = "block";
+  
+})
+  
+
+
+
